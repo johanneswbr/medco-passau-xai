@@ -3,7 +3,7 @@
 This project explores patterns in employee attrition and compares models that predict whether an employee will leave, using the [fictional IBM HR Analytics dataset](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset).
 
 - [Exploratory analysis](eda.ipynb) examines how attrition varies by factors such as overtime and tenure.
-- [Prediction and XAI](model_xai.ipynb) compares logistic regression and random forest against a baseline. Local and global model explanations are planned.
+- [Prediction and XAI](model_xai.ipynb) compares logistic regression, random forest, and histogram gradient boosting. Local and global model explanations are planned.
 
 ## Run locally
 
