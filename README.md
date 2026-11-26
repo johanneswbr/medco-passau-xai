@@ -5,20 +5,15 @@ This project predicts whether an employee will leave and explains the prediction
 ## Notebooks
 
 1. [Exploratory analysis](01_eda.ipynb) describes the workforce and examines attrition by factors such as overtime and tenure.
-2. [Model training and evaluation](02_modeling.ipynb) tunes and evaluates the final **XGBoost** model.
+2. One notebook per model, all with the same stratified 80/20 train-test split:
+   - [XGBoost](02_modeling_xgboost.ipynb) tunes and evaluates the **final model**.
+   - [Random forest](02_modeling_random_forest.ipynb) runs the same steps with a random forest. It is easier to explain but ranks employees clearly worse.
+   - [Logistic regression](02_modeling_logistic_regression.ipynb) tunes a logistic regression with hand-built features. It serves as an interpretable reference.
 3. LIME explanations of individual predictions (planned).
 
 ### Why XGBoost and not logistic regression?
 
 On this data, a logistic regression ranks employees about as well as XGBoost. However, its coefficients can be read directly, so LIME would add little. The exercise asks us to explain a model with LIME, so we use XGBoost. Its ensemble of several hundred trees cannot be read directly.
-
-### Comparisons and earlier experiments
-
-These notebooks are not the final model and are kept for reference:
-
-- [Random forest](02_modeling_random_forest.ipynb) runs the same steps as `02_modeling.ipynb` with a random forest. A random forest is easier to explain but ranks employees clearly worse.
-- [Model comparison](model_comparison.ipynb) compares logistic regression, random forest and histogram gradient boosting with nested cross-validation.
-- [Logistic regression](logistic_regression.ipynb) tunes a logistic regression with hand-built features. It serves as an interpretable reference.
 
 ## Run locally
 
