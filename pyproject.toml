@@ -1,7 +1,7 @@
 [project]
 name = "medco-passau-xai"
 version = "0.1.0"
-description = "Add your description here"
+description = "Employee attrition prediction with XGBoost and LIME explanations for the fictional Passau MedCo"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = []
@@ -9,8 +9,12 @@ dependencies = []
 [dependency-groups]
 dev = [
     "ipykernel>=7.4.0",
+    "joblib>=1.6.0",
+    "lightgbm>=4.7.0",
     "matplotlib>=3.11.2",
     "pandas>=3.1.1",
     "scikit-learn>=1.9.1",
+    "scipy>=1.18.1",
     "seaborn>=0.13.2",
+    "xgboost>=3.4.1",
 ]
